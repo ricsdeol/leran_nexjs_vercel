@@ -1,5 +1,6 @@
-import '@/app/ui/global.css'
-import { inter } from '@/app/ui/fonts'
+import { Analytics } from "@vercel/analytics/react";
+import "@/app/ui/global.css";
+import { inter } from "@/app/ui/fonts";
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
